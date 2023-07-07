@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BC UI Kit</title>
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" href="BC_UI_style.css">
+</head>
+<body>
+    <form autocomplete="off">
+        <span class="UI-headers">Fields</span>
+        <p><span class="field">Input E-Mail</span><input class="field" id="email" type="email" name="login" value="" placeholder="E-Mail"></p>
+        <p><span class="field">Input password</span><input class="field" id="password" type="password" name="password" value="" placeholder="Password"></p>
+        <p><span class="field">Search</span><input class="field" id="search" type="text" name="search" value="" placeholder="Search"></p>
+        <p><span class="field">Search + Text</span><input class="field" id="search_and_text" type="text" name="search" value="Text" placeholder="Placeholder"></p>
+        <p><span class="field">Text Area</span><textarea class="field" id="usertext" name="textarea" rows="8" cols="80" placeholder="Text"></textarea></p>
+        <p><span class="field">Settings Fields</span><div class="multiple_fields"><input class="field" id="name" type="text" name="username" value="" placeholder="Name"> <div class="borderline"></div>
+        <input class="field" id="surname" type="text" name="surname" value="" placeholder="Surname"></div></p>
+        <p><span class="field">Settings Fields</span><div class="multiple_fields"><input class="field" id="email_sticked_to_password" type="email" name="username" value="" placeholder="E-mail"> <div class="borderline"></div>
+        <input class="field" id="password_sticked_to_email" type="password" name="surname" value="" placeholder="Password"></div></p>
+    </form>
+    <div id="all_buttons_and_filters">
+        <div class="contained_buttons">
+            <span class="UI-headers" id="contained_buttons_header">Contained Buttons</span>
+            <span id="name_active">CTA</span>
+            <span id="name_disabled">Disabled</span>
+            <span id="name_big_button">Big Button</span>
+            <span id="name_big_button_icon">Big Button + Icon</span>
+            <span id="name_medium_button">Medium button</span>
+            <span id="name_small_button">Small Button</span>
+            <button class="orange_button" id="big_button">Button</button>
+            <button id="grey_with_icon_button">Button</button>
+            <button class="orange_button" id="medium_button">Button</button>
+            <button class="orange_button" id="small_button">Button</button>
+            <button class="orange_button" id="big_disabled_button" disabled>Button</button>
+            <button class="orange_button" id="medium_disabled_button" disabled>Button</button>
+            <button class="orange_button" id="small_disabled_button" disabled>Button</button>
+        </div>
+        <div id="text_buttons_and_filters">
+            <div class="text_buttons">
+                <span class="UI-headers" id="text_buttons_header">Text Buttons</span>
+                <span id="name_active_text">CTA</span>
+                <span id="name_big_text_button">Big Text Button</span>
+                <span id="name_big_text_button_icon">Big Text Button + Icon</span>
+                <span id="name_medium_text_button">Medium Text button</span>
+                <span id="name_small_text_button">Small Default Text Button</span>
+                <span id="name_small_secondary_button">Small Secondary Text Button </span>
+                <button id="big_text_button">Button</button>
+                <button id="big_text_button_icon">Button</button>
+                <button id="medium_text_button">Button</button>
+                <button id="small_text_button">Button</button>
+                <button id="small_secondary_button">Button</button>
+            </div>
+            <div id="filters">
+                <span class="UI-headers" id="filters_header">Filters</span>
+                <span id="filters_name">Default</span>
+                <span id="name_tag_filter">Tag</span>
+                <span id="name_filter_itself">Filter</span>
+                <span id="name_filter_incorrect">Incorrect</span>
+                <span id="name_filter_correct">Correct</span>
+                <div id="tag_filter">Label</div>
+                <input type="checkbox" id="filter_itself">
+                <label for="filter_itself" id="filter_itself_label">Label</label>
+                <input type="checkbox" id="filter_incorrect">
+                <label for="filter_incorrect" id="filter_incorrect_label">Label</label>
+                <input type="checkbox" id="filter_correct">
+                <label for="filter_correct" id="filter_correct_label">Label</label>
+            </div>
+        </div>
+    </div>
+    <div id="toolbar_tabbar_icons">
+        <div id="toolbar">
+            <span class="UI-headers" id="toolbar_header">Toolbar</span>
+            <span id="switcher_toolbar">Switcher</span>
+            <input id="switcher" type="checkbox"><label for="switcher" id="switcher_label"></label>
+        </div>
+        <span class="UI-headers" id="tabbar_header">Tabbar</span>
+        <div id="tabbar">
+            <input type="radio" id="word_search_tabbar" name="tabbar">
+            <label id="label_word_search_tabbar" for="word_search_tabbar">Поиск слова</label>
+            <input type="radio" id="corrector_tabbar" name="tabbar">
+            <label id="label_corrector_tabbar" for="corrector_tabbar">Корректор</label>
+            <input type="radio" id="settings_tabbar" name="tabbar">
+            <label id="label_settings_tabbar" for="settings_tabbar">Настройки</label>
+        </div>
+        <span class="UI-headers" id="icons_header">Icons</span>
+        <div id="icons">
+            <span id="size_24_icons">Size 24</span>
+            <span id="size_15_icons">Size 15</span>
+            <span id="logo">Logo</span>
+            <svg id="google_icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <g clip-path="url(#clip0_177_15173)">
+                  <path d="M23.9883 12.2245C23.9883 11.2412 23.9066 10.5237 23.7299 9.7796H12.2388V14.2176H18.9838C18.8479 15.3205 18.1135 16.9814 16.4816 18.0975L16.4587 18.2461L20.092 20.9963L20.3437 21.0209C22.6555 18.9347 23.9883 15.8653 23.9883 12.2245Z" fill="#4285F4"/>
+                  <path d="M12.2393 23.9175C15.5438 23.9175 18.3179 22.8544 20.3442 21.0208L16.4821 18.0975C15.4486 18.8017 14.0615 19.2934 12.2393 19.2934C9.00273 19.2934 6.25576 17.2073 5.27654 14.3239L5.13301 14.3358L1.35507 17.1926L1.30566 17.3268C3.31829 21.2333 7.45238 23.9175 12.2393 23.9175Z" fill="#34A853"/>
+                  <path d="M5.27634 14.3239C5.01797 13.5798 4.86844 12.7825 4.86844 11.9587C4.86844 11.1349 5.01797 10.3376 5.26275 9.59354L5.25591 9.43507L1.43062 6.53235L1.30547 6.59052C0.475969 8.21162 0 10.032 0 11.9587C0 13.8854 0.475969 15.7058 1.30547 17.3269L5.27634 14.3239Z" fill="#FBBC05"/>
+                  <path d="M12.2393 4.62403C14.5374 4.62403 16.0877 5.59401 16.9717 6.40461L20.4258 3.10928C18.3044 1.1826 15.5438 0 12.2393 0C7.45238 0 3.31829 2.68406 1.30566 6.59056L5.26295 9.59359C6.25576 6.7102 9.00273 4.62403 12.2393 4.62403Z" fill="#EB4335"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_177_15173">
+                    <rect width="24" height="24" fill="white"/>
+                  </clipPath>
+                </defs>
+            </svg>
+            <svg id="corrector_icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M9.24307 18.97L7.5 21L3 20.97V16.7279L12.9001 6.82783L17.1422 11.0709L9.24207 18.971L9.24307 18.97ZM14.3131 5.41381L16.4352 3.29279C16.6227 3.10532 16.877 3 17.1422 3C17.4073 3 17.6616 3.10532 17.8492 3.29279L20.6782 6.12082C20.8657 6.30835 20.971 6.56266 20.971 6.82783C20.971 7.093 20.8657 7.34731 20.6782 7.53484L18.5562 9.65686L14.3141 5.41381H14.3131Z" fill="white"/>
+            </svg>
+            <svg id="settings_icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M5.33501 4.54436C6.36158 3.62493 7.56736 2.92787 8.87647 2.49701C9.2507 2.96607 9.72586 3.34474 10.2666 3.60488C10.8074 3.86501 11.3999 3.99991 12 3.99953C12.6 4.00003 13.1924 3.86528 13.7332 3.60533C14.274 3.34537 14.7492 2.96688 15.1235 2.49801C16.4326 2.92886 17.6384 3.62593 18.665 4.54536C18.4465 5.10363 18.3566 5.70393 18.402 6.3017C18.4473 6.89946 18.6268 7.47933 18.9269 7.99827C19.2265 8.5182 19.6394 8.96392 20.135 9.30228C20.6306 9.64064 21.1961 9.86295 21.7895 9.95265C22.0702 11.3011 22.0702 12.6929 21.7895 14.0414C20.6297 14.2193 19.5599 14.9011 18.9269 15.9957C18.6266 16.5148 18.4471 17.0949 18.4017 17.6928C18.3564 18.2908 18.4464 18.8912 18.665 19.4497C17.6384 20.3688 16.4326 21.0655 15.1235 21.496C14.7492 21.0271 14.274 20.6486 13.7332 20.3887C13.1924 20.1287 12.6 19.994 12 19.9945C11.3999 19.9941 10.8074 20.129 10.2666 20.3891C9.72586 20.6493 9.2507 21.028 8.87647 21.497C7.56733 21.0662 6.36155 20.3691 5.33501 19.4497C5.5537 18.8913 5.64371 18.2908 5.59836 17.6928C5.55301 17.0948 5.37346 16.5148 5.07305 15.9957C4.77338 15.476 4.36041 15.0305 3.86481 14.6923C3.36922 14.3541 2.80377 14.132 2.21048 14.0424C1.92984 12.6936 1.92984 11.3015 2.21048 9.95265C2.80386 9.86295 3.36937 9.64064 3.86497 9.30228C4.36057 8.96392 4.7735 8.5182 5.07305 7.99827C5.37323 7.47933 5.55266 6.89946 5.59801 6.3017C5.64336 5.70393 5.55347 5.10263 5.33501 4.54436ZM13.4998 14.5932C13.8437 14.3977 14.1455 14.1361 14.3878 13.8236C14.6302 13.511 14.8083 13.1535 14.912 12.7718C15.0156 12.3901 15.0427 11.9917 14.9918 11.5995C14.9408 11.2073 14.8127 10.829 14.6149 10.4865C14.4171 10.144 14.1535 9.84396 13.8393 9.60371C13.525 9.36346 13.1664 9.18773 12.7839 9.08663C12.4015 8.98554 12.0028 8.96108 11.6109 9.01466C11.2189 9.06824 10.8415 9.1988 10.5002 9.39883C9.81691 9.79936 9.31978 10.4539 9.11732 11.2195C8.91486 11.9851 9.02352 12.7998 9.41957 13.4856C9.81562 14.1715 10.4669 14.6728 11.2313 14.8803C11.9957 15.0878 12.8112 14.9846 13.4998 14.5932Z" fill="white"/>
+            </svg>
+            <svg id="search_icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M17.6986 16.2257L22.16 20.6861L20.6861 22.16L16.2257 17.6986C14.5661 19.029 12.5019 19.7527 10.3748 19.7496C5.19992 19.7496 1 15.5497 1 10.3748C1 5.19992 5.19992 1 10.3748 1C15.5497 1 19.7496 5.19992 19.7496 10.3748C19.7527 12.5019 19.029 14.5661 17.6986 16.2257ZM15.6091 15.4528C16.9311 14.0934 17.6693 12.2711 17.6663 10.3748C17.6663 6.34677 14.4029 3.08329 10.3748 3.08329C6.34677 3.08329 3.08329 6.34677 3.08329 10.3748C3.08329 14.4029 6.34677 17.6663 10.3748 17.6663C12.2711 17.6693 14.0934 16.9311 15.4528 15.6091L15.6091 15.4528Z" fill="white"/>
+              </svg>
+            <svg id="cross_icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M16.75 7L7 16.75M7 7L16.75 16.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <svg id="question_clue_icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M11.0714 14.2857C11.0714 14.5699 10.9585 14.8424 10.7576 15.0433C10.5567 15.2443 10.2842 15.3571 10 15.3571C9.71584 15.3571 9.44332 15.2443 9.24239 15.0433C9.04145 14.8424 8.92857 14.5699 8.92857 14.2857C8.92857 14.0016 9.04145 13.729 9.24239 13.5281C9.44332 13.3272 9.71584 13.2143 10 13.2143C10.2842 13.2143 10.5567 13.3272 10.7576 13.5281C10.9585 13.729 11.0714 14.0016 11.0714 14.2857ZM8.57143 7.14286C8.57143 6.75929 8.7 6.39929 8.92643 6.14429C9.14143 5.90214 9.47929 5.71429 10 5.71429C10.9343 5.71429 11.7014 6.67714 11.45 7.68429C11.3214 8.2 11.0143 8.495 10.5521 8.93857L10.425 9.06C9.90429 9.56429 9.28571 10.2343 9.28571 11.4286C9.28571 11.618 9.36097 11.7997 9.49492 11.9336C9.62888 12.0676 9.81056 12.1429 10 12.1429C10.1894 12.1429 10.3711 12.0676 10.5051 11.9336C10.639 11.7997 10.7143 11.618 10.7143 11.4286C10.7143 10.8379 10.9664 10.5236 11.4179 10.0879L11.5543 9.95786C11.9929 9.54357 12.6014 8.96857 12.8357 8.03071C13.2986 6.18071 11.9229 4.28571 10 4.28571C9.09214 4.28571 8.35857 4.63357 7.85929 5.195C7.37143 5.74357 7.14286 6.455 7.14286 7.14286C7.14286 7.3323 7.21811 7.51398 7.35207 7.64793C7.48602 7.78189 7.6677 7.85714 7.85714 7.85714C8.04658 7.85714 8.22826 7.78189 8.36222 7.64793C8.49617 7.51398 8.57143 7.3323 8.57143 7.14286ZM0 10C0 4.47714 4.47714 0 10 0C15.5229 0 20 4.47714 20 10C20 15.5229 15.5229 20 10 20C4.47714 20 0 15.5229 0 10ZM10 1.42857C5.26643 1.42857 1.42857 5.26643 1.42857 10C1.42857 14.7336 5.26643 18.5714 10 18.5714C14.7336 18.5714 18.5714 14.7336 18.5714 10C18.5714 5.26643 14.7336 1.42857 10 1.42857Z" fill="white"/>
+            </svg>
+            <svg id="photo_add_icon" xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 20" fill="none">
+                <path d="M2.18182 20C1.58182 20 1.068 19.804 0.640365 19.412C0.212729 19.02 -0.000725421 18.5493 1.85214e-06 18V6C1.85214e-06 5.45 0.21382 4.979 0.641456 4.587C1.06909 4.195 1.58255 3.99933 2.18182 4H5.61818L7.63637 2H14.1818V6H17.4545V9H21.8182V18C21.8182 18.55 21.6044 19.021 21.1767 19.413C20.7491 19.805 20.2356 20.0007 19.6364 20H2.18182ZM10.9091 16.5C12.2727 16.5 13.432 16.0623 14.3869 15.187C15.3418 14.3117 15.8189 13.2493 15.8182 12C15.8182 10.75 15.3407 9.68733 14.3858 8.812C13.4309 7.93667 12.272 7.49933 10.9091 7.5C9.54546 7.5 8.38618 7.93767 7.43127 8.813C6.47637 9.68833 5.99927 10.7507 6 12C6 13.25 6.47746 14.3127 7.43237 15.188C8.38727 16.0633 9.54618 16.5007 10.9091 16.5ZM10.9091 14.5C10.1455 14.5 9.5 14.2583 8.97273 13.775C8.44546 13.2917 8.18182 12.7 8.18182 12C8.18182 11.3 8.44546 10.7083 8.97273 10.225C9.5 9.74167 10.1455 9.5 10.9091 9.5C11.6727 9.5 12.3182 9.74167 12.8455 10.225C13.3727 10.7083 13.6364 11.3 13.6364 12C13.6364 12.7 13.3727 13.2917 12.8455 13.775C12.3182 14.2583 11.6727 14.5 10.9091 14.5ZM19.6364 6V4H17.4545V2H19.6364V0H21.8182V2H24V4H21.8182V6H19.6364Z" fill="#EB6D54"/>
+            </svg>
+            <svg id="password_eye_icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                <path d="M7.5 2.8125C4.375 2.8125 1.70625 4.75625 0.625 7.5C1.70625 10.2437 4.375 12.1875 7.5 12.1875C10.625 12.1875 13.2938 10.2437 14.375 7.5C13.2938 4.75625 10.625 2.8125 7.5 2.8125ZM7.5 10.625C5.775 10.625 4.375 9.225 4.375 7.5C4.375 5.775 5.775 4.375 7.5 4.375C9.225 4.375 10.625 5.775 10.625 7.5C10.625 9.225 9.225 10.625 7.5 10.625ZM7.5 5.625C6.4625 5.625 5.625 6.4625 5.625 7.5C5.625 8.5375 6.4625 9.375 7.5 9.375C8.5375 9.375 9.375 8.5375 9.375 7.5C9.375 6.4625 8.5375 5.625 7.5 5.625Z" fill="white"/>
+            </svg>
+            <svg id="logo_icon" xmlns="http://www.w3.org/2000/svg" width="209" height="33" viewBox="0 0 209 33" fill="none">
+                <path d="M13.4414 25.5986C18.7222 25.5986 22.1401 22.7446 22.1401 18.4208C22.1401 15.1567 19.3545 12.6445 16.022 12.559V12.4223C18.876 12.0634 21.0293 9.92719 21.0293 7.09027C21.0293 3.24506 18.0728 0.937927 13.0312 0.937927H0.914551V25.5986H13.4414ZM8.16064 5.91107H11.0659C12.8945 5.91107 13.9883 6.83392 13.9883 8.35492C13.9883 9.84174 12.8262 10.8159 10.9634 10.8159H8.16064V5.91107ZM8.16064 20.6254V14.9687H11.3052C13.4756 14.9687 14.7744 15.9941 14.7744 17.7543C14.7744 19.6171 13.4927 20.6254 11.2539 20.6254H8.16064Z" fill="#EB6D54"/>
+                <path d="M33.4536 11.0722C35.0942 11.0722 36.2734 12.166 36.3931 13.8578H30.5142C30.6509 12.2343 31.8643 11.0722 33.4536 11.0722ZM36.5981 19.4804C36.188 20.6083 35.043 21.2748 33.6245 21.2748C31.7446 21.2748 30.4116 19.9418 30.4116 18.0961V17.6518H42.9214V15.7548C42.9214 9.97845 39.1445 6.25287 33.2998 6.25287C27.3696 6.25287 23.6611 10.0981 23.6611 16.2675C23.6611 22.4028 27.3354 26.0771 33.522 26.0771C38.7002 26.0771 42.2549 23.5478 42.8359 19.4804H36.5981Z" fill="#EB6D54"/>
+                <path d="M46.7495 2.59564V6.73138H44.2544V11.8071H46.7495V20.3349C46.7495 24.0605 48.8516 25.5986 54.1836 25.5986C55.5166 25.5986 56.4053 25.4789 57.0718 25.3422V20.4887C56.6616 20.5571 56.4053 20.5742 55.8755 20.5742C54.4399 20.5742 53.7563 19.9589 53.7563 18.7797V11.8071H57.0718V6.73138H53.7563V2.59564H46.7495Z" fill="#EB6D54"/>
+                <path d="M61.0708 2.59564V6.73138H58.5757V11.8071H61.0708V20.3349C61.0708 24.0605 63.1729 25.5986 68.5049 25.5986C69.8379 25.5986 70.7266 25.4789 71.3931 25.3422V20.4887C70.9829 20.5571 70.7266 20.5742 70.1968 20.5742C68.7612 20.5742 68.0776 19.9589 68.0776 18.7797V11.8071H71.3931V6.73138H68.0776V2.59564H61.0708Z" fill="#EB6D54"/>
+                <path d="M83.0142 11.0722C84.6548 11.0722 85.834 12.166 85.9536 13.8578H80.0747C80.2114 12.2343 81.4248 11.0722 83.0142 11.0722ZM86.1587 19.4804C85.7485 20.6083 84.6035 21.2748 83.1851 21.2748C81.3052 21.2748 79.9722 19.9418 79.9722 18.0961V17.6518H92.4819V15.7548C92.4819 9.97845 88.7051 6.25287 82.8604 6.25287C76.9302 6.25287 73.2217 10.0981 73.2217 16.2675C73.2217 22.4028 76.896 26.0771 83.0825 26.0771C88.2607 26.0771 91.8154 23.5478 92.3965 19.4804H86.1587Z" fill="#EB6D54"/>
+                <path d="M94.6182 25.5986H101.625V16.1992C101.625 13.5673 102.975 12.2172 105.607 12.2172C106.325 12.2172 107.042 12.3539 107.641 12.6103V6.73138C107.179 6.56049 106.632 6.45795 106 6.45795C103.761 6.45795 102.309 7.75677 101.591 10.4399H101.454V6.73138H94.6182V25.5986Z" fill="#EB6D54"/>
+                <path d="M121.347 26.0258C127.995 26.0258 132.797 21.8046 132.831 15.6523H125.893C125.67 18.5063 123.859 20.3349 121.364 20.3349C118.356 20.3349 116.493 17.7031 116.493 13.2426C116.493 8.83344 118.373 6.2016 121.347 6.2016C123.859 6.2016 125.688 8.06439 125.858 10.8671H132.797C132.78 4.74896 127.858 0.510681 121.347 0.510681C113.81 0.510681 109.11 5.12494 109.11 13.2597C109.11 21.3945 113.793 26.0258 121.347 26.0258Z" fill="#EB6D54"/>
+                <path d="M144.623 26.0771C150.792 26.0771 154.552 22.5395 154.552 16.1479C154.552 9.9101 150.707 6.25287 144.623 6.25287C138.573 6.25287 134.711 9.94427 134.711 16.1479C134.711 22.5224 138.471 26.0771 144.623 26.0771ZM144.623 21.0698C142.863 21.0698 141.82 19.3266 141.82 16.165C141.82 13.0888 142.914 11.2602 144.623 11.2602C146.349 11.2602 147.443 13.0888 147.443 16.165C147.443 19.3266 146.366 21.0698 144.623 21.0698Z" fill="#EB6D54"/>
+                <path d="M169.489 6.45795C166.771 6.45795 164.772 7.82513 163.866 10.1323H163.747V6.73138H156.723V31.6313H163.729V22.3344H163.866C164.738 24.539 166.789 25.872 169.574 25.872C174.257 25.872 176.872 22.3857 176.872 16.165C176.872 9.92719 174.24 6.45795 169.489 6.45795ZM166.703 20.4716C164.857 20.4716 163.712 18.831 163.695 16.1821C163.712 13.5502 164.875 11.8583 166.703 11.8583C168.532 11.8583 169.694 13.5502 169.694 16.165C169.694 18.7968 168.549 20.4716 166.703 20.4716Z" fill="#EB6D54"/>
+                <path d="M181.913 32.52C188.048 32.52 191.176 30.4008 192.782 25.1542L198.405 6.73138H191.005L188.151 20.5742H188.014L185.143 6.73138H177.367L183.554 25.5986C183.605 25.7524 183.639 25.9575 183.639 26.1113C183.639 26.9487 182.75 27.3076 180.768 27.3076H179.418V32.52H181.913Z" fill="#EB6D54"/>
+                <path d="M201.225 0.937927L201.84 17.5493H207.787L208.402 0.937927H201.225ZM204.813 26.2822C206.796 26.2822 208.437 24.7783 208.437 22.8642C208.437 20.9672 206.796 19.4633 204.813 19.4633C202.797 19.4633 201.173 20.9672 201.173 22.8642C201.173 24.7783 202.797 26.2822 204.813 26.2822Z" fill="#EB6D54"/>
+            </svg>
+        </div>
+    </div>
+    <div id="typography">
+        <span class="UI-headers" id="typography_header">Typography</span>
+        <span class="typography_weight">Medium</span>
+        <span id="medium_caption_1">Medium / Caption 1</span>
+        <span class="typography_info">SF Pro Display • Weight: Medium • Size: 13px • Line Height: 16px</span>
+        <span id="medium_fields_2">Medium / Fields 2</span>
+        <span class="typography_info">SF Pro Display • Weight: Medium • Size: 14px • Line Height: 17px</span>
+        <span id="medium_fields_1">Medium / Fields 1</span>
+        <span class="typography_info">SF Pro Display • Weight: Medium • Size: 15px • Line Height: 18px</span>
+        <span id="medium_button_1">Medium / Button 1</span>
+        <span class="typography_info">SF Pro Display • Weight: Medium • Size: 14px • Line Height: 17px</span>
+        <span id="medium_button_2">Medium / Button 2</span>
+        <span class="typography_info">SF Pro Display • Weight: Medium • Size: 15px • Line Height: 20px</span>
+        <span id="medium_button_3">Medium / Button 3</span>
+        <span class="typography_info">SF Pro Display • Weight: Medium • Size: 17px • Line Height: 22px</span>
+        <span id="medium_output_text">Medium / Output Text</span>
+        <span class="typography_info">SF Pro Display • Weight: Medium • Size: 19px • Line Height: 22px</span>
+        <span class="typography_weight">Bold</span>
+        <span id="bold_title_2">Bold / Title 2</span>
+        <span class="typography_info">SF Pro Display • Weight: Bold • Size: 17px • Line Height: 22px</span>
+        <span id="bold_title_1">Bold / Title 1</span>
+        <span class="typography_info">SF Pro Display • Weight: Black • Size: 25px • Line Height: 27px</span>
+        <span class="typography_weight">Black</span>
+        <span id="black_title">Black / Title</span>
+        <span class="typography_info">SF Pro Display • Weight: Bold • Size: 17px • Line Height: 22px</span>
+        <span id="black_logo">Black / Logo</span>
+        <span class="typography_info">SF Pro Display • Weight: Black • Size: 35px • Line Height: 40px</span>
+    </div>
+    <div id="colors">
+        <span class="UI-headers" id="colors_header">Colors</span>
+        <span class="column_headers" id="colors_inactive">Inactive</span>
+        <span class="column_headers" id="colors_active">Active</span>
+        <span class="column_headers" id="colors_disabled">Disabled</span>
+        <span class="row_headers" id="colors_button">Button</span>
+        <span class="row_headers" id="colors_border">Border</span>
+        <span class="row_headers" id="colors_fields">Fields</span>
+        <span class="row_headers" id="colors_icon">Icon</span>
+        <span class="row_headers" id="colors_bar">Bar</span>
+        <span class="row_headers" id="colors_background">Background</span>
+        <span class="row_headers" id="colors_mistakes">Mistakes</span>
+        <span class="row_headers" id="colors_text">Text</span>
+        <div class="color_block_with_text" id="cta_with_text">
+            <div class="color_block" id="cta_color_block"></div>
+            <span class="color_name">CTA</span>
+            <span class="color_info">#EB6D54 • RGB: 235, 109, 84</span>
+        </div>
+        <div class="color_block_with_text" id="cta_secondary_with_text">
+            <div class="color_block" id="cta_secondary_block"></div>
+            <span class="color_name">CTA Secondary</span>
+            <span class="color_info">#383838 • RGB: 56, 56, 56</span>
+        </div>
+        <div class="color_block_with_text" id="cta_tertiary_with_text">
+            <div class="color_block" id="cta_tertiary_color_block"></div>
+            <span class="color_name">CTA Tertiary</span>
+            <span class="color_info">#FFFFFF • RGB: 255, 255, 255</span>
+        </div>
+        <div class="color_block_with_text" id="active_with_text">
+            <div class="color_block" id="active_color_block"></div>
+            <span class="color_name">Active</span>
+            <span class="color_info">#AB513F • RGB: 171, 81, 63</span>
+        </div>
+        <div class="color_block_with_text" id="alt_active_with_text">
+            <div class="color_block" id="alt_active_color_block"></div>
+            <span class="color_name">Alt Active</span>
+            <span class="color_info">#545454 • RGB: 84, 84, 84</span>
+        </div>
+        <div class="color_block_with_text" id="disabled_with_text">
+            <div class="color_block" id="disabled_color_block"></div>
+            <span class="color_name">Disabled</span>
+            <span class="color_info">#88493D • RGB: 136, 73, 61</span>
+        </div>
+        <div class="color_block_with_text" id="border_primary_with_text">
+            <div class="color_block" id="border_primary_color_block"></div>
+            <span class="color_name">Primary</span>
+            <span class="color_info">#A4A4A4 • RGB: 164, 164, 164</span>
+        </div>
+        <div class="color_block_with_text" id="border_secondary_with_text">
+            <div class="color_block" id="border_secondary_color_block"></div>
+            <span class="color_name">Secondary</span>
+            <span class="color_info">#272727 • RGB: 39, 39, 39</span>
+        </div>
+        <div class="color_block_with_text" id="fields_primary_with_text">
+            <div class="color_block" id="fields_primary_color_block"></div>
+            <span class="color_name">Primary</span>
+            <span class="color_info">#494949 • RGB: 73, 73, 73</span>
+        </div>
+        <div class="color_block_with_text" id="default_icon_with_text">
+            <div class="color_block" id="default_icon_color_block"></div>
+            <span class="color_name">Default</span>
+            <span class="color_info">#EB6D54 • RGB: 235, 109, 84</span>
+        </div>
+        <div class="color_block_with_text" id="alt_default_icon_with_text">
+            <div class="color_block" id="alt_default_icon_color_block"></div>
+            <span class="color_name">Alt Default</span>
+            <span class="color_info">#FFFFFF • RGB: 255, 255, 255</span>
+        </div>
+        <div class="color_block_with_text" id="controls_icon_with_text">
+            <div class="color_block" id="controls_icon_color_block"></div>
+            <span class="color_name">Controls</span>
+            <span class="color_info">#A4A4A4 • RGB: 164, 164, 164</span>
+        </div>
+        <div class="color_block_with_text" id="bar_primary_with_text">
+            <div class="color_block" id="bar_primary_color_block"></div>
+            <span class="color_name">Primary</span>
+            <span class="color_info">#424242 • RGB: 66, 66, 66</span>
+        </div>
+        <div class="color_block_with_text" id="bar_alt_primary_with_text">
+            <div class="color_block" id="bar_alt_primary_color_block"></div>
+            <span class="color_name">Alt Primary</span>
+            <span class="color_info">#EB6D54 • RGB: 235, 109, 84</span>
+        </div>
+        <div class="color_block_with_text" id="bar_secondary_with_text">
+            <div class="color_block" id="bar_secondary_color_block"></div>
+            <span class="color_name">Secondary</span>
+            <span class="color_info">#383838 • RGB: 56, 56, 56</span>
+        </div>
+        <div class="color_block_with_text" id="background_primary_with_text">
+            <div class="color_block" id="background_primary_color_block"></div>
+            <span class="color_name">Primary</span>
+            <span class="color_info">#272727 • RGB: 39, 39, 39</span>
+        </div>
+        <div class="color_block_with_text" id="false_mistakes_with_text">
+            <div class="color_block" id="false_mistakes_color_block"></div>
+            <span class="color_name">False</span>
+            <span class="color_info">#E93A3A • RGB: 233, 58, 58</span>
+        </div>
+        <div class="color_block_with_text" id="true_mistakes_with_text">
+            <div class="color_block" id="true_mistakes_color_block"></div>
+            <span class="color_name">True</span>
+            <span class="color_info">#3AD14C • RGB: 58, 209, 76</span>
+        </div>
+        <div class="color_block_with_text" id="punctuation_mistakes_with_text">
+            <div class="color_block" id="punctuation_mistakes_color_block"></div>
+            <span class="color_name">Punctuation</span>
+            <span class="color_info">#4BFAEF • RGB: 75, 250, 239</span>
+        </div>
+        <div class="color_block_with_text" id="speech_mistakes_with_text">
+            <div class="color_block" id="speech_mistakes_color_block"></div>
+            <span class="color_name">Speech</span>
+            <span class="color_info">#7064FF • RGB: 112, 100, 255</span>
+        </div>
+        <div class="color_block_with_text" id="spelling_mistakes_with_text">
+            <div class="color_block" id="spelling_mistakes_color_block"></div>
+            <span class="color_name">Spelling</span>
+            <span class="color_info">#FCD651 • RGB: 252, 214, 81</span>
+        </div>
+        <div class="color_block_with_text" id="text_primary_with_text">
+            <div class="color_block" id="text_primary_color_block"></div>
+            <span class="color_name">Primary</span>
+            <span class="color_info">#FFFFFF • RGB: 255, 255, 255</span>
+        </div>
+        <div class="color_block_with_text" id="text_secondary_with_text">
+            <div class="color_block" id="text_secondary_color_block"></div>
+            <span class="color_name">Primary</span>
+            <span class="color_info">#FFFFFF • RGB: 255, 255, 255</span>
+        </div>
+        <div class="color_block_with_text" id="text_tertiary_with_text">
+            <div class="color_block" id="text_tertiary_color_block"></div>
+            <span class="color_name">Primary</span>
+            <span class="color_info">#FFFFFF • RGB: 255, 255, 255</span>
+        </div>
+        <div class="color_block_with_text" id="text_disabled_with_text">
+            <div class="color_block" id="text_disabled_color_block"></div>
+            <span class="color_name">Primary</span>
+            <span class="color_info">#FFFFFF • RGB: 255, 255, 255</span>
+        </div>
+    </div>
+</body>
+</html>

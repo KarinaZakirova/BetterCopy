@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+  box-sizing: border-box;
+  font-size: 16px!important;
+  font-family: "PT Sans", serif!important;
+
+}
+
+body {
+    padding: 40px;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+form {
+    width: 414px;
+    margin: 0 auto;
+}
+
+input.text, textarea.text, select {
+    background: white;
+    border: 1px solid #aaa;
+    padding: 16px;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+}
+
+input.text, select {
+    height: 44px;
+}
+
+textarea.text {
+    min-height: 150px;
+    resize: vertical;
+}
+
+input.text:hover, textarea.text:hover, select:hover {
+    border-color: orange;
+}
+
+input.text:focus, textarea.text:focus, select:focus {
+    border-color: #8206d7;
+}
+
+input.text:disabled, textarea.text:disabled, select:disabled {
+    background: #efefef;
+}
+
+input.text:disabled:hover, textarea.text:disabled:hover, select:disabled:hover {
+    border-color: #aaa;
+}
+
+label.text {
+    display: block;
+    color: #999;
+    margin-bottom: 0.5em;
+}
+
+select {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 0;
+    appearance: none;
+}
+
+button, label.file {
+    display: block;
+    width: 100%;
+    height: 44px;
+    padding: 0 16px;
+    border: none;
+    background: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button.primary {
+    background: magenta;
+    color: white;
+    }
+
+button.secondary, label.file {
+    background: #ddd;
+}
+
+button.primary:hover {
+    background: darkmagenta;
+}
+
+button.primary:active {
+    background: black;
+}
+
+button.secondary:hover, label.file:hover {
+    background: #d4d4d4;
+}
+
+button.secondary:active, label.file:active {
+    background: #bbb;
+}
+
+button:disabled,
+button:disabled:hover,
+button:disabled:focus,
+label.file:disabled,
+label.file:disabled:hover,
+label.file:disabled:focus{
+    background: #e1e1e1;
+    color: #666;
+    cursor: default;
+}
+
+label.file {
+    text-align: center;
+    position: relative;
+    line-height: 44px;
+}
+
+label.file input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.check, .radio {
+    width: 16px;
+    height: 16px;
+    background: white;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    outline: none;
+    margin-right: 6px;
+}
+
+input.check:hover, input.radio:hover {
+    border-color: orange;
+}
+
+input.check:focus, input.radio:focus {
+    border-color: magenta;
+}
+
+input.check:disabled, input.radio:disabled {
+    background-color: #efefef;
+}
+
+input.check:checked, input.radio:checked {
+    accent-color: magenta;
+}
+
+label.radio {
+    position: relative;
+    display: block;
+    padding-left: 22px;
+}
+
+input.radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+input.switcher {
+    display: none;
+}
+
+input.switcher + label {
+    display: block;
+    position: relative;
+    height: 44px;
+    width: 80px;
+    border-radius: 22px;
+    background: #ddd;
+    cursor: pointer;
+    transition: 200ms ease-in;
+}
+
+input.switcher + label:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 4px;
+    left: 4px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    transition: 200ms ease-out;
+}
+
+input.switcher:checked + label {
+    background: magenta;
+}
+
+input.switcher:checked + label:before {
+    left: 40px;
+}

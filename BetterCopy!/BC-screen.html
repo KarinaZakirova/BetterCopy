@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Filter page</title>
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" href="BC_UI_style.css">
+    <link rel="stylesheet" href="BC-screen-style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <input class="field" id="search_and_text" type="text" name="search" value="Красивый" placeholder="Напишите слово" autocomplete="off"></p>
+        <span class="questions">Что вы ищите?</span>
+        <div class="filters_labels">
+            <input type="checkbox" id="synonym_filter">
+            <label for="synonym_filter" id="synonym">Синоним</label>
+            <input type="checkbox" id="antonym_filter">
+            <label for="antonym_filter" id="antonym">Антоним</label>
+            <input type="checkbox" id="hypernym_filter">
+            <label for="hypernym_filter" id="hypernym">Гипероним</label>
+            <input type="checkbox" id="hyponym_filter">
+            <label for="hyponym_filter" id="hyponym">Гипоним</label>
+        </div>
+        <span class="questions">В каком стиле вы ищете слово?</span>
+        <div class="filters_labels">
+            <input type="checkbox" id="writing_style_filter">
+            <label for="writing_style_filter" id="writing_style">Книжный</label>
+            <input type="checkbox" id="neutral_style_filter">
+            <label for="neutral_style_filter" id="neutral_style">Нейтральный</label>
+            <input type="checkbox" id="speaking_style_filter">
+            <label for="speaking_style_filter" id="speaking_style">Разговорный</label>
+        </div>
+        <button class="orange_button" id="medium_button">Button</button>
+        <div id="tabbar">
+            <input type="radio" id="word_search_tabbar" name="tabbar">
+            <label id="label_word_search_tabbar" for="word_search_tabbar">Поиск слова</label>
+            <input type="radio" id="corrector_tabbar" name="tabbar">
+            <label id="label_corrector_tabbar" for="corrector_tabbar">Корректор</label>
+            <input type="radio" id="settings_tabbar" name="tabbar">
+            <label id="label_settings_tabbar" for="settings_tabbar">Настройки</label>
+        </div>
+    </div>
+</body>
+</html>
